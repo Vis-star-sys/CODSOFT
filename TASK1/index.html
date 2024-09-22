@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" crossorigin href="/input.css">
+    <link rel="stylesheet" href="/output.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <header class="bg-slate-200 px-4 py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="font-medium text-xl" id="title-2">Portfolio</h1>
+            <button id="menu-btn" class="md:hidden flex items-center text-xl">
+                <svg class="w-6 h-6 block" id="menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+
+                <!-- Close Icon -->
+                <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
+            </button>
+            <nav id="menu" class="hidden md:flex">
+                <ul class="flex space-x-10">
+                    <li class="cursor-pointer relative group py-2"><a href="#Home" id="bar1">Home</a>
+                        <span
+                            class="absolute bottom-0 left-0 w-0 h-0.5 bg-black transition-all duration-300 transform group-hover:w-full"></span>
+                    </li>
+                    <!-- <li class="cursor-pointer relative group py-2"><a href="#Projects" id="bar2">Projects</a>
+                        <span
+                            class="absolute bottom-0 left-0 w-0 h-0.5 bg-black transition-all duration-300 transform group-hover:w-full"></span>
+                    </li> -->
+                    <li class="cursor-pointer relative group py-2"><a href="#Skills" id="bar3">Skills</a>
+                        <span
+                            class="absolute bottom-0 left-0 w-0 h-0.5 bg-black transition-all duration-300 transform group-hover:w-full"></span>
+                    </li>
+                    <li class="cursor-pointer relative group py-2"><a href="#experience" id="bar4">Experience</a>
+                        <span
+                            class="absolute bottom-0 left-0 w-0 h-0.5 bg-black transition-all duration-300 transform group-hover:w-full"></span>
+                    </li>
+                    <li class="cursor-pointer relative group py-2"><a href="#About" id="bar5">About</a>
+                        <span
+                            class="absolute bottom-0 left-0 w-0 h-0.5 bg-black transition-all duration-300 transform group-hover:w-full"></span>
+                    </li>
+                </ul>
+            </nav>
+            <nav id="mobile-menu"
+                class="z-10 absolute top-16 right-4 w-48 bg-blur bg-slate-200 rounded-lg shadow-lg hidden flex-col space-y-2 md:hidden">
+                <ul class="space-y-2">
+                    <li><a href="#Home" class="block py-2 px-4 text-black hover:bg-gray-200">Home</a></li>
+                    <!-- <li><a href="#Projects" class="block py-2 px-4 text-black hover:bg-gray-200">Projects</a></li> -->
+                    <li><a href="#Skills" class="block py-2 px-4 text-black hover:bg-gray-200">Skills</a></li>
+                    <li><a href="#experience" class="block py-2 px-4 text-black hover:bg-gray-200">Experience</a></li>
+                    <li><a href="#About" class="block py-2 px-4 text-black hover:bg-gray-200">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="flex flex-col lg:flex-row h-auto w-full bg-slate-200 px-4 py-12 lg:px-48 lg:py-32" id="Home">
+        <div class="flex flex-col items-center lg:items-start lg:w-1/2 lg:pr-16">
+            <h1 class="text-lg font-semibold mb-2 lg:text-2xl title-1">Hey, I'm Vishal👋</h1>
+            <h1 class="text-4xl font-bold lg:text-6xl mb-4" id="main_title1"
+                style="font-family: 'Poppins', sans-serif;">
+                <span class="text-purple-700">Front</span><span>end</span><br>
+                <span>Developer</span>
+            </h1>
+            <p class="text-sm text-center lg:text-left lg:text-base opacity-70 mb-4 lg:mb-6" id="line-1">
+                I'm a frontend developer based in India. I'll help you build beautiful
+                websites your users will love.
+            </p>
+
+            <div class="flex lg:flex-row gap-4 btn1">
+                <a href="/Resume.pdf" target="_blank"><button
+                        class="h-10 px-6 lg:px-4  bg-black text-white rounded-md font-bold text-xs lg:text-sm hover:bg-white hover:text-black duration-300">
+                        Download CV
+                    </button></a>
+                <a href="#"><button
+                        class="h-10 px-4 bg-slate-300 text-black rounded-md font-bold text-xs lg:text-sm hover:border hover:border-black duration-300 transition-all">
+                        Browse Projects
+                    </button></a>
+            </div>
+            <div class="social_media flex flex-row gap-3 mt-5 lg:ms-20 btn2">
+                <a href="https://github.com/Vis-star-sys">
+                    <i class="fa-brands fa-github fa-xl hover:scale-125 duration-300"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/vishal-suthar-vs18">
+                    <i class="fa-brands fa-linkedin-in fa-xl hover:scale-125 duration-300"></i>
+                </a>
+                <a href="https://www.instagram.com/vs_suthar18/">
+                    <i class="fa-brands fa-instagram fa-xl hover:scale-125 duration-300"></i>
+                </a>
+
+            </div>
+        </div>
+        <div class="flex justify-center lg:justify-end lg:w-1/2 mt-8 lg:mt-0">
+            <img src="/computer.jpg" alt="profile" id="profile"
+                class="h-48 w-48 object-cover rounded-full border-2 border-purple-700 lg:h-96 lg:w-96 lg:px-6 lg:py-6">
+        </div>
+    </section>
+    <!-- Hero Section 2 -->
+    <section id="About">
+        <div class="about-me flex flex-col bg-slate-200 pb-12 px-4 py-12 lg:px-48 lg:py-32">
+            <h2 class="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl" style="font-family: Poppins, sans-serif">
+                About me<span class="text-purple-700">.</span>
+            </h2>
+            <div class="paregraph flex items-start my-6 sm:my-8">
+                <span class="block h-8 lg:h-16  w-1 bg-purple-700" id="design"></span>
+                <p class="ms-4 text-xl sm:text-2xl main_paragraph">Developing beautiful and functional websites is what
+                    I love doing,
+                    and that's why I give my all in every new challenge.</p>
+            </div>
+
+            <div class="container mx-auto py-8 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:flex-row lg:gap-16">
+                <div class="card-1-content" id="card_one">
+                    <h2 class="text-2xl font-bold mb-4">My Skills</h2>
+                    <div
+                        class="overflow-hidden p-4 bg-gray-400 rounded-2xl h-64 flex-col space-y-14 w-full lg:w-96 xl:w-96">
+                        <div class="flex space-x-4 scroll">
+                            <div
+                                class="flex items-center justify-center p-2 bg-black text-white rounded-full min-w-max">
+                                <span class="text-sm">UI/UX Expertise</span>
+                                <svg class="w-4 h-4 ml-2 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.151c.969 0 1.371 1.24.588 1.81l-3.36 2.448a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.36-2.448a1 1 0 00-1.176 0l-3.36 2.448c-.785.57-1.84-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118l-3.36-2.448c-.783-.57-.38-1.81.588-1.81h4.151a1 1 0 00.95-.69l1.286-3.957z" />
+                                </svg>
+                            </div>
+
+                            <div
+                                class="flex items-center justify-center p-2 bg-black text-white rounded-full min-w-max">
+                                <span class="text-sm">HTML5/CSS3 Mastery</span>
+                                <svg class="w-4 h-4 ml-2 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.151c.969 0 1.371 1.24.588 1.81l-3.36 2.448a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.36-2.448a1 1 0 00-1.176 0l-3.36 2.448c-.785.57-1.84-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118l-3.36-2.448c-.783-.57-.38-1.81.588-1.81h4.151a1 1 0 00.95-.69l1.286-3.957z" />
+                                </svg>
+                            </div>
+
+                            <div
+                                class="flex items-center justify-center p-2 bg-black text-white rounded-full min-w-max">
+                                <span class="text-sm">figma</span>
+                                <svg class="w-4 h-4 ml-2 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.151c.969 0 1.371 1.24.588 1.81l-3.36 2.448a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.36-2.448a1 1 0 00-1.176 0l-3.36 2.448c-.785.57-1.84-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118l-3.36-2.448c-.783-.57-.38-1.81.588-1.81h4.151a1 1 0 00.95-.69l1.286-3.957z" />
+                                </svg>
+                            </div>
+                            <div
+                                class="flex items-center justify-center p-2 bg-black text-white rounded-full min-w-max">
+                                <span class="text-sm">PHP</span>
+                                <svg class="w-4 h-4 ml-2 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.151c.969 0 1.371 1.24.588 1.81l-3.36 2.448a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.36-2.448a1 1 0 00-1.176 0l-3.36 2.448c-.785.57-1.84-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118l-3.36-2.448c-.783-.57-.38-1.81.588-1.81h4.151a1 1 0 00.95-.69l1.286-3.957z" />
+                                </svg>
+                            </div>
+
+                            <div
+                                class="flex items-center justify-center p-2 bg-black text-white rounded-full min-w-max">
+                                <span class="text-sm">Lunacy</span>
+                                <svg class="w-4 h-4 ml-2 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.151c.969 0 1.371 1.24.588 1.81l-3.36 2.448a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.36-2.448a1 1 0 00-1.176 0l-3.36 2.448c-.785.57-1.84-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118l-3.36-2.448c-.783-.57-.38-1.81.588-1.81h4.151a1 1 0 00.95-.69l1.286-3.957z" />
+                                </svg>
+                            </div>
+                            <div
+                                class="flex items-center justify-center p-2 bg-black text-white rounded-full min-w-max">
+                                <span class="text-sm">Tailwind</span>
+                                <svg class="w-4 h-4 ml-2 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.151c.969 0 1.371 1.24.588 1.81l-3.36 2.448a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.36-2.448a1 1 0 00-1.176 0l-3.36 2.448c-.785.57-1.84-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118l-3.36-2.448c-.783-.57-.38-1.81.588-1.81h4.151a1 1 0 00.95-.69l1.286-3.957z" />
+                                </svg>
+                            </div>
+                            <div
+                                class="flex items-center justify-center p-2 bg-black text-white rounded-full min-w-max">
+                                <span class="text-sm">Java</span>
+                                <svg class="w-4 h-4 ml-2 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.151c.969 0 1.371 1.24.588 1.81l-3.36 2.448a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.36-2.448a1 1 0 00-1.176 0l-3.36 2.448c-.785.57-1.84-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118l-3.36-2.448c-.783-.57-.38-1.81.588-1.81h4.151a1 1 0 00.95-.69l1.286-3.957z" />
+                                </svg>
+                            </div>
+                            <div
+                                class="flex items-center justify-center p-2 bg-black text-white rounded-full min-w-max">
+                                <span class="text-sm">C++</span>
+                                <svg class="w-4 h-4 ml-2 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.151c.969 0 1.371 1.24.588 1.81l-3.36 2.448a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.36-2.448a1 1 0 00-1.176 0l-3.36 2.448c-.785.57-1.84-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118l-3.36-2.448c-.783-.57-.38-1.81.588-1.81h4.151a1 1 0 00.95-.69l1.286-3.957z" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="flex space-x-4 animate-move-left-right">
+
+                            <div
+                                class="flex items-center justify-center p-2 bg-black text-white rounded-full min-w-max">
+                                <span class="text-sm">UI/UX Expertise</span>
+                                <svg class="w-4 h-4 ml-2 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.151c.969 0 1.371 1.24.588 1.81l-3.36 2.448a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.36-2.448a1 1 0 00-1.176 0l-3.36 2.448c-.785.57-1.84-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118l-3.36-2.448c-.783-.57-.38-1.81.588-1.81h4.151a1 1 0 00.95-.69l1.286-3.957z" />
+                                </svg>
+                            </div>
+
+                            <div
+                                class="flex items-center justify-center p-2 bg-black text-white rounded-full min-w-max">
+                                <span class="text-sm">HTML5/CSS3 Mastery</span>
+                                <svg class="w-4 h-4 ml-2 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.151c.969 0 1.371 1.24.588 1.81l-3.36 2.448a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.36-2.448a1 1 0 00-1.176 0l-3.36 2.448c-.785.57-1.84-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118l-3.36-2.448c-.783-.57-.38-1.81.588-1.81h4.151a1 1 0 00.95-.69l1.286-3.957z" />
+                                </svg>
+                            </div>
+
+                            <div
+                                class="flex items-center justify-center p-2 bg-black text-white rounded-full min-w-max">
+                                <span class="text-sm">HTML5/CSS3 Mastery</span>
+                                <svg class="w-4 h-4 ml-2 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.151c.969 0 1.371 1.24.588 1.81l-3.36 2.448a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.36-2.448a1 1 0 00-1.176 0l-3.36 2.448c-.785.57-1.84-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118l-3.36-2.448c-.783-.57-.38-1.81.588-1.81h4.151a1 1 0 00.95-.69l1.286-3.957z" />
+                                </svg>
+                            </div>
+                            <div
+                                class="flex items-center justify-center p-2 bg-black text-white rounded-full min-w-max">
+                                <span class="text-sm">HTML5/CSS3 Mastery</span>
+                                <svg class="w-4 h-4 ml-2 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.151c.969 0 1.371 1.24.588 1.81l-3.36 2.448a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.36-2.448a1 1 0 00-1.176 0l-3.36 2.448c-.785.57-1.84-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118l-3.36-2.448c-.783-.57-.38-1.81.588-1.81h4.151a1 1 0 00.95-.69l1.286-3.957z" />
+                                </svg>
+                            </div>
+                        </div>
+
+
+                        <div class="flex space-x-4 scroll">
+
+                            <div
+                                class="flex items-center justify-center p-2 bg-black text-white rounded-full min-w-max">
+                                <span class="text-sm">UI/UX Expertise</span>
+                                <svg class="w-4 h-4 ml-2 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.151c.969 0 1.371 1.24.588 1.81l-3.36 2.448a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.36-2.448a1 1 0 00-1.176 0l-3.36 2.448c-.785.57-1.84-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118l-3.36-2.448c-.783-.57-.38-1.81.588-1.81h4.151a1 1 0 00.95-.69l1.286-3.957z" />
+                                </svg>
+                            </div>
+
+                            <div
+                                class="flex items-center justify-center p-2 bg-black text-white rounded-full min-w-max">
+                                <span class="text-sm">HTML5/CSS3 Mastery</span>
+                                <svg class="w-4 h-4 ml-2 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.151c.969 0 1.371 1.24.588 1.81l-3.36 2.448a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.36-2.448a1 1 0 00-1.176 0l-3.36 2.448c-.785.57-1.84-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118l-3.36-2.448c-.783-.57-.38-1.81.588-1.81h4.151a1 1 0 00.95-.69l1.286-3.957z" />
+                                </svg>
+                            </div>
+
+                            <div
+                                class="flex items-center justify-center p-2 bg-black text-white rounded-full min-w-max">
+                                <span class="text-sm">HTML5/CSS3 Mastery</span>
+                                <svg class="w-4 h-4 ml-2 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.151c.969 0 1.371 1.24.588 1.81l-3.36 2.448a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.36-2.448a1 1 0 00-1.176 0l-3.36 2.448c-.785.57-1.84-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118l-3.36-2.448c-.783-.57-.38-1.81.588-1.81h4.151a1 1 0 00.95-.69l1.286-3.957z" />
+                                </svg>
+                            </div>
+                            <div
+                                class="flex items-center justify-center p-2 bg-black text-white rounded-full min-w-max">
+                                <span class="text-sm">HTML5/CSS3 Mastery</span>
+                                <svg class="w-4 h-4 ml-2 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.151c.969 0 1.371 1.24.588 1.81l-3.36 2.448a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.36-2.448a1 1 0 00-1.176 0l-3.36 2.448c-.785.57-1.84-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118l-3.36-2.448c-.783-.57-.38-1.81.588-1.81h4.151a1 1 0 00.95-.69l1.286-3.957z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card-2-content" id="card_two">
+                    <h2 class="text-xl font-bold mb-4">My Special Place</h2>
+                    <div class="overflow-hidden bg-gray-400 p-4 rounded-2xl w-auto h-auto">
+                        <iframe class="h-56 rounded-lg w-full"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.140580181519!2d-122.42067968468168!3d37.77492977975984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c8c8c8c8c%3A0x0!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1633429310527!5m2!1sen!2sus"
+                            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section of Skills -->
+
+    <section id="Skills">
+        <div class="skills_tag bg-slate-200 pb-12 px-4 py-12 lg:px-48 lg:py-32">
+            <h3 class="text-5xl font-bold skills_saction">Skills<span class="text-purple-700">.</span></h3>
+            <div class="topic-content mt-6 mb-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="web_design_content skills">
+                        <h4 class="text-2xl font-bold mb-3">Web Design</h4>
+                        <ul class="space-y-2">
+                            <li class="opacity-80 text-lg">UI/UX Design</li>
+                            <li class="opacity-80 text-lg">Responsive Design</li>
+                            <li class="opacity-80 text-lg">Wireframing</li>
+                            <li class="opacity-80 text-lg">User Research</li>
+                        </ul>
+                    </div>
+                    <div class="front_end_content skills">
+                        <h4 class="text-2xl font-bold mb-3">Frontend</h4>
+                        <ul class="space-y-2">
+                            <li class="opacity-80 text-lg">Javascript</li>
+                            <li class="opacity-80 text-lg">ReactJS</li>
+                            <li class="opacity-80 text-lg">NextJS</li>
+                            <li class="opacity-80 text-lg">CSS3</li>
+                        </ul>
+                    </div>
+                    <div class="backend_content skills">
+                        <h4 class="text-2xl font-bold mb-3">Backend</h4>
+                        <ul class="space-y-2">
+                            <li class="opacity-80 text-lg">NodeJS</li>
+                            <li class="opacity-80 text-lg">MongoDB</li>
+                            <li class="opacity-80 text-lg">ExpressJS</li>
+                            <li class="opacity-80 text-lg">Vercel</li>
+                        </ul>
+                    </div>
+                    <div class="soft_skills_content skills">
+                        <h4 class="text-2xl font-bold mb-3">Soft Skills</h4>
+                        <ul class="space-y-2">
+                            <li class="opacity-80 text-lg">Effective communication</li>
+                            <li class="opacity-80 text-lg">Collaboration</li>
+                            <li class="opacity-80 text-lg">Commitment</li>
+                            <li class="opacity-80 text-lg">Leadership</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="mainsvg grid lg:flex lg:flex-row lg:justify-center lg:items-center lg:gap-20 grid-cols-4 gap-4 mt-6 ">
+                <!-- SVG icons here, ensure they have appropriate dimensions or use Tailwind's responsive utilities -->
+                <svg viewBox="0 0 128 128" height="100%" width="100%" class="images">
+                    <g fill="#61DAFB">
+                        <circle cx="64" cy="64" r="11.4"></circle>
+                        <path
+                            d="M107.3 45.2c-2.2-.8-4.5-1.6-6.9-2.3.6-2.4 1.1-4.8 1.5-7.1 2.1-13.2-.2-22.5-6.6-26.1-1.9-1.1-4-1.6-6.4-1.6-7 0-15.9 5.2-24.9 13.9-9-8.7-17.9-13.9-24.9-13.9-2.4 0-4.5.5-6.4 1.6-6.4 3.7-8.7 13-6.6 26.1.4 2.3.9 4.7 1.5 7.1-2.4.7-4.7 1.4-6.9 2.3C8.2 50 1.4 56.6 1.4 64s6.9 14 19.3 18.8c2.2.8 4.5 1.6 6.9 2.3-.6 2.4-1.1 4.8-1.5 7.1-2.1 13.2.2 22.5 6.6 26.1 1.9 1.1 4 1.6 6.4 1.6 7.1 0 16-5.2 24.9-13.9 9 8.7 17.9 13.9 24.9 13.9 2.4 0 4.5-.5 6.4-1.6 6.4-3.7 8.7-13 6.6-26.1-.4-2.3-.9-4.7-1.5-7.1 2.4-.7 4.7-1.4 6.9-2.3 12.5-4.8 19.3-11.4 19.3-18.8s-6.8-14-19.3-18.8zM92.5 14.7c4.1 2.4 5.5 9.8 3.8 20.3-.3 2.1-.8 4.3-1.4 6.6-5.2-1.2-10.7-2-16.5-2.5-3.4-4.8-6.9-9.1-10.4-13 7.4-7.3 14.9-12.3 21-12.3 1.3 0 2.5.3 3.5.9zM81.3 74c-1.8 3.2-3.9 6.4-6.1 9.6-3.7.3-7.4.4-11.2.4-3.9 0-7.6-.1-11.2-.4-2.2-3.2-4.2-6.4-6-9.6-1.9-3.3-3.7-6.7-5.3-10 1.6-3.3 3.4-6.7 5.3-10 1.8-3.2 3.9-6.4 6.1-9.6 3.7-.3 7.4-.4 11.2-.4 3.9 0 7.6.1 11.2.4 2.2 3.2 4.2 6.4 6 9.6 1.9 3.3 3.7 6.7 5.3 10-1.7 3.3-3.4 6.6-5.3 10zm8.3-3.3c1.5 3.5 2.7 6.9 3.8 10.3-3.4.8-7 1.4-10.8 1.9 1.2-1.9 2.5-3.9 3.6-6 1.2-2.1 2.3-4.2 3.4-6.2zM64 97.8c-2.4-2.6-4.7-5.4-6.9-8.3 2.3.1 4.6.2 6.9.2 2.3 0 4.6-.1 6.9-.2-2.2 2.9-4.5 5.7-6.9 8.3zm-18.6-15c-3.8-.5-7.4-1.1-10.8-1.9 1.1-3.3 2.3-6.8 3.8-10.3 1.1 2 2.2 4.1 3.4 6.1 1.2 2.2 2.4 4.1 3.6 6.1zm-7-25.5c-1.5-3.5-2.7-6.9-3.8-10.3 3.4-.8 7-1.4 10.8-1.9-1.2 1.9-2.5 3.9-3.6 6-1.2 2.1-2.3 4.2-3.4 6.2zM64 30.2c2.4 2.6 4.7 5.4 6.9 8.3-2.3-.1-4.6-.2-6.9-.2-2.3 0-4.6.1-6.9.2 2.2-2.9 4.5-5.7 6.9-8.3zm22.2 21l-3.6-6c3.8.5 7.4 1.1 10.8 1.9-1.1 3.3-2.3 6.8-3.8 10.3-1.1-2.1-2.2-4.2-3.4-6.2zM31.7 35c-1.7-10.5-.3-17.9 3.8-20.3 1-.6 2.2-.9 3.5-.9 6 0 13.5 4.9 21 12.3-3.5 3.8-7 8.2-10.4 13-5.8.5-11.3 1.4-16.5 2.5-.6-2.3-1-4.5-1.4-6.6zM7 64c0-4.7 5.7-9.7 15.7-13.4 2-.8 4.2-1.5 6.4-2.1 1.6 5 3.6 10.3 6 15.6-2.4 5.3-4.5 10.5-6 15.5C15.3 75.6 7 69.6 7 64zm28.5 49.3c-4.1-2.4-5.5-9.8-3.8-20.3.3-2.1.8-4.3 1.4-6.6 5.2 1.2 10.7 2 16.5 2.5 3.4 4.8 6.9 9.1 10.4 13-7.4 7.3-14.9 12.3-21 12.3-1.3 0-2.5-.3-3.5-.9zM96.3 93c1.7 10.5.3 17.9-3.8 20.3-1 .6-2.2.9-3.5.9-6 0-13.5-4.9-21-12.3 3.5-3.8 7-8.2 10.4-13 5.8-.5 11.3-1.4 16.5-2.5.6 2.3 1 4.5 1.4 6.6zm9-15.6c-2 .8-4.2 1.5-6.4 2.1-1.6-5-3.6-10.3-6-15.6 2.4-5.3 4.5-10.5 6-15.5 13.8 4 22.1 10 22.1 15.6 0 4.7-5.8 9.7-15.7 13.4z">
+                        </path>
+                    </g>
+                </svg>
+
+                <svg viewBox="0 0 128 128" height="auto" width="auto" class="images">
+                    <path fill="#5fa04e"
+                        d="M86.072 24.664a.71.71 0 0 0-.351.09.755.755 0 0 0-.375.637v18.93a.564.564 0 0 1-.264.464.549.549 0 0 1-.52 0l-3.066-1.773a1.486 1.486 0 0 0-1.478 0L67.75 50.146a1.48 1.48 0 0 0-.754 1.28v14.238c0 .524.291 1.021.754 1.283l12.27 7.135a1.486 1.486 0 0 0 1.476 0l12.27-7.135c.463-.262.754-.759.754-1.283V30.168c0-.553-.291-1.05-.754-1.31l-7.32-4.104a.836.836 0 0 0-.374-.09zM13.686 42.43c-.23 0-.461.086-.663.2L.753 49.739A1.493 1.493 0 0 0 0 51.047l.03 19.101c0 .263.142.526.374.643a.656.656 0 0 0 .725 0l7.295-4.193a1.48 1.48 0 0 0 .75-1.282v-8.939c0-.524.29-1.021.754-1.283l3.095-1.805a1.39 1.39 0 0 1 .752-.203c.26 0 .522.057.725.203l3.096 1.805c.463.262.754.759.754 1.283v8.94c0 .522.288 1.02.75 1.28l7.236 4.194a.704.704 0 0 0 .752 0 .724.724 0 0 0 .377-.643V51.047c0-.524-.29-1.02-.754-1.283L14.47 42.63a1.763 1.763 0 0 0-.664-.201h-.121zm100.67.207v.002l-.002.002c-.253 0-.505.065-.737.197l-12.271 7.13c-.463.264-.75.759-.75 1.284v14.24c0 .524.287 1.02.75 1.281l12.183 6.989a1.43 1.43 0 0 0 1.448 0l7.38-4.133a.724.724 0 0 0 .375-.643.724.724 0 0 0-.375-.64L110.03 61.21a.76.76 0 0 1-.375-.645V56.11a.72.72 0 0 1 .375-.638l3.854-2.213a.705.705 0 0 1 .752 0l3.845 2.213a.762.762 0 0 1 .377.638v3.494c0 .263.144.525.375.641a.704.704 0 0 0 .754 0l7.291-4.28a1.46 1.46 0 0 0 .727-1.28V51.22c0-.524-.292-1.019-.727-1.282l-12.181-7.101a1.499 1.499 0 0 0-.74-.201zm-67.043.049a1.374 1.374 0 0 0-.682.183l-12.17 7.067 4.258 7.81L47.457 42.7a2 2 0 0 0-.143-.013h-.002zm.566.148 8.607 14.814 4.045-7.445a1.34 1.34 0 0 0-.25-.201l-6.271-3.643-6.037-3.488c-.03-.015-.063-.025-.094-.037zm-.25.06-8.774 15.104 8.702 15.965c.024-.005.048-.007.072-.014l8.719-16.047-8.72-15.007zm-13.377 7.172a1.35 1.35 0 0 0-.576 1.123V65.49c0 .228.062.45.168.647l4.728-8.143-4.32-7.928zm26.45.342-4.071 7.49 4.318 7.434V51.189c0-.28-.092-.553-.248-.78zm20.056 2.865c.065 0 .13.015.19.045l4.193 2.448c.116.058.175.201.175.318v4.893c0 .146-.06.264-.175.322l-4.196 2.445a.431.431 0 0 1-.377 0l-4.195-2.443c-.116-.058-.176-.205-.176-.322v-4.893c0-.146.061-.261.176-.32l4.195-2.448a.425.425 0 0 1 .19-.045zm33.555 1.98a.26.26 0 0 0-.145.046l-2.346 1.369a.3.3 0 0 0-.142.26v2.74c0 .116.055.204.142.262l2.346 1.369a.262.262 0 0 0 .289 0l2.344-1.37a.308.308 0 0 0 .144-.261V56.93a.303.303 0 0 0-.144-.26l-2.344-1.371a.26.26 0 0 0-.144-.043v-.002zm-57.819 2.9-8.512 15.665.014-.007 12.287-7.137c.343-.194.563-.526.637-.903l-4.426-7.619zm-17.783.095-4.715 8.117c.1.123.217.23.35.31L46.5 73.737l.13.075h.003a1.377 1.377 0 0 0 .3.126c.031.01.062.015.092.022.06.013.118.022.178.027.029.003.057.002.086.002l-8.578-15.74zm24.51 13.393c-.427 0-.853.1-1.215.304l-11.55 6.73A2.457 2.457 0 0 0 49.24 80.8v13.42c0 .874.463 1.689 1.215 2.127l3.041 1.746c1.475.728 1.995.724 2.66.724 2.17 0 3.416-1.338 3.416-3.638V81.936a.356.356 0 0 0-.345-.352h-1.475a.356.356 0 0 0-.352.352v13.248c0 1.019-1.066 2.039-2.773 1.166l-3.156-1.834c-.116-.058-.174-.207-.174-.323V80.768c0-.116.058-.263.174-.32l11.545-6.696c.087-.058.232-.058.35 0l11.544 6.695c.115.06.176.176.176.32v13.424c0 .145-.06.265-.176.323l-11.547 6.726c-.087.058-.232.058-.35 0l-2.949-1.777c-.088-.058-.204-.086-.29-.03-.81.468-.953.528-1.735.79-.174.058-.463.172.115.492l3.852 2.303c.376.203.78.318 1.215.318.434 0 .866-.115 1.213-.26L75.98 96.35a2.463 2.463 0 0 0 1.215-2.13V80.8c0-.874-.463-1.686-1.215-2.123l-11.546-6.73a2.488 2.488 0 0 0-1.213-.305zm18.027 6.129a2.236 2.236 0 0 0-2.227 2.244 2.236 2.236 0 0 0 2.227 2.242c1.217 0 2.23-1.02 2.23-2.242a2.254 2.254 0 0 0-2.23-2.243v-.001zm-.03.376h.003a1.86 1.86 0 0 1 1.883 1.868c0 1.02-.841 1.89-1.883 1.89-1.012 0-1.854-.842-1.854-1.89s.87-1.866 1.852-1.868zm-.81.614v2.56h.494v-1.013h.438c.174 0 .23.058.26.203 0 .03.086.669.086.785h.52c-.06-.116-.087-.468-.116-.672-.028-.32-.056-.551-.404-.58.174-.059.46-.145.46-.611 0-.67-.58-.67-.869-.67l-.869-.002zm.438.408h.402c.146 0 .379 0 .379.35 0 .116-.059.35-.379.35h-.402v-.7zm-14.469 2.01c-3.3 0-5.272 1.399-5.272 3.758 0 2.534 1.969 3.228 5.124 3.548 3.79.38 4.08.935 4.08 1.692 0 1.31-1.042 1.861-3.473 1.861-3.068 0-3.735-.757-3.967-2.299 0-.176-.14-.29-.314-.29H61.05a.35.35 0 0 0-.35.35c0 1.98 1.044 4.307 6.11 4.307 3.645 0 5.755-1.456 5.755-4.02 0-2.503-1.68-3.174-5.238-3.64-3.59-.466-3.965-.728-3.965-1.572 0-.699.32-1.629 2.98-1.629 2.375 0 3.272.524 3.62 2.125a.34.34 0 0 0 .316.264h1.534c.087 0 .177-.057.236-.115a.476.476 0 0 0 .086-.264c-.231-2.795-2.053-4.076-5.758-4.076z">
+                    </path>
+                </svg>
+
+                <svg viewBox="0 0 128 128" height="auto" width="auto" class="images">
+
+                    <g id="surface1">
+                        <path style=" stroke:none;fill-rule:nonzero;fill:rgb(86.666667%,0%,19.215686%);fill-opacity:1;"
+                            d="M 64 15.359375 L 16.332031 32.359375 L 23.601562 95.386719 L 64 117.761719 L 104.398438 95.386719 L 111.667969 32.359375 Z M 64 15.359375 ">
+                        </path>
+                        <path style=" stroke:none;fill-rule:nonzero;fill:rgb(76.470588%,0%,18.431373%);fill-opacity:1;"
+                            d="M 64 15.359375 L 64 26.726562 L 64 26.675781 L 64 117.761719 L 104.398438 95.386719 L 111.667969 32.359375 Z M 64 15.359375 ">
+                        </path>
+                        <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;"
+                            d="M 64 26.675781 L 34.203125 93.492188 L 45.3125 93.492188 L 51.300781 78.539062 L 76.59375 78.539062 L 82.585938 93.492188 L 93.695312 93.492188 Z M 72.703125 69.324219 L 55.296875 69.324219 L 64 48.382812 Z M 72.703125 69.324219 ">
+                        </path>
+                    </g>
+
+                </svg>
+
+                <svg viewBox="0 0 128 128" height="auto" width="auto" class="images">
+                    <path
+                        d="M13.227 56.074c-3.528 0-5.727 1.778-6.602 5.3C7.95 59.603 9.5 58.95 11.25 59.399c1 .25 1.728.977 2.524 1.801 1.3 1.324 2.8 2.852 6.078 2.852 3.523 0 5.723-1.778 6.598-5.301-1.324 1.773-2.875 2.425-4.625 1.976-1-.25-1.723-.976-2.524-1.8-1.3-1.324-2.801-2.852-6.074-2.852zm43.922.477v13.574h2V56.55h-2zm-3.324.324c-.7 0-1.274.574-1.274 1.273 0 .676.575 1.277 1.274 1.277.699 0 1.3-.6 1.277-1.277 0-.699-.577-1.273-1.277-1.273zm23 0c-.7 0-1.274.574-1.274 1.273 0 .677.575 1.277 1.274 1.277.727 0 1.3-.6 1.277-1.277 0-.699-.577-1.273-1.277-1.273zm21.352.226v5.024c-.7-.977-1.801-1.574-3.25-1.574-2.528 0-4.625 2.125-4.625 4.898 0 2.75 2.097 4.902 4.625 4.902 1.449 0 2.55-.6 3.25-1.578v1.352h2V57.102h-2zm-60.824.625-2 .598v2.5H33.65v1.926h1.703v4.476c0 2.421 1.224 3.274 4.324 2.899v-1.801c-1.527.074-2.3.101-2.3-1.098V62.75h2.273v-1.926h-2.297v-3.098zm7.875 2.825c-2.528 0-4.625 2.125-4.625 4.898 0 2.75 2.098 4.902 4.625 4.902 1.45 0 2.547-.6 3.25-1.578v1.352h2v-9.301h-2v1.3c-.704-.976-1.801-1.573-3.25-1.573zm39.824.023c-1.25 0-2.25.477-2.875 1.477v-1.2h-2v9.297h2v-5c0-1.898 1.05-2.672 2.375-2.672 1.25 0 2.074.723 2.074 2.149v5.5h2v-5.727c0-2.398-1.5-3.824-3.574-3.824zm21.848 0c-2.824 0-4.922 2.124-4.922 4.902 0 2.75 2.126 4.899 4.922 4.899 1.829 0 3.426-.95 4.176-2.426l-1.723-.973c-.454.847-1.352 1.422-2.477 1.422-1.625 0-2.875-1.25-2.875-2.922 0-1.676 1.227-2.926 2.875-2.926 1.125 0 2.051.551 2.45 1.426l1.726-1c-.75-1.453-2.323-2.402-4.152-2.402zm8.875.027c-1.898 0-3.399 1.098-3.399 2.848 0 3.323 5 2.403 5 4.05 0 .75-.676 1.052-1.574 1.052-1.028 0-1.778-.5-2.074-1.352l-1.727 1c.601 1.324 1.95 2.176 3.801 2.176 2 0 3.625-1.023 3.625-2.875 0-3.45-5-2.425-5-4.125 0-.65.626-.977 1.348-.95.778 0 1.426.324 1.75 1.051l1.703-.953c-.653-1.222-1.925-1.922-3.453-1.922zm8.578 0c-1.903 0-3.402 1.098-3.402 2.848 0 3.323 5 2.403 5 4.05 0 .75-.677 1.052-1.575 1.052-1.024 0-1.774-.5-2.074-1.352l-1.726 1c.6 1.324 1.948 2.176 3.8 2.176 2 0 3.625-1.023 3.625-2.875 0-3.45-5-2.425-5-4.125 0-.65.626-.977 1.352-.95.774 0 1.422.324 1.75 1.051l1.7-.953c-.654-1.222-1.927-1.922-3.45-1.922zm-71.527.223v9.3h2v-9.3h-2zm7.852 0 2.925 9.3h1.973l1.95-6.273 1.925 6.274h1.977l2.925-9.301h-2.125l-1.83 6.426-1.92-6.426h-1.925L64.6 67.25l-1.798-6.426h-2.125zm15.148 0v9.3h2v-9.3h-2zM45.525 62.5c1.676 0 2.953 1.25 2.953 2.976 0 1.722-1.277 2.973-2.953 2.973-1.672 0-2.922-1.25-2.95-2.973 0-1.727 1.279-2.976 2.95-2.976zm49.703 0c1.672 0 2.949 1.25 2.949 2.976 0 1.722-1.277 2.973-2.95 2.973-1.675 0-2.953-1.25-2.953-2.973 0-1.727 1.278-2.976 2.953-2.976zM6.603 64C3.075 64 .876 65.774 0 69.3c1.324-1.776 2.875-2.425 4.625-1.976 1 .25 1.727.977 2.523 1.8 1.301 1.325 2.8 2.852 6.078 2.852 3.523 0 5.723-1.777 6.598-5.3-1.324 1.773-2.875 2.426-4.625 1.972-1-.25-1.722-.973-2.523-1.797C11.399 65.522 9.899 64 6.603 64z">
+                    </path>
+                </svg>
+
+
+
+                <svg viewBox="0 0 128 128" class="images">
+                    <defs>
+                        <linearGradient id="a" x1="76.079" x2="523.48" y1="10.798" y2="365.95"
+                            gradientTransform="translate(1.11 14.613) scale(.24566)" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#9013fe"></stop>
+                            <stop offset="1" stop-color="#6610f2"></stop>
+                        </linearGradient>
+                        <linearGradient id="b" x1="193.51" x2="293.51" y1="109.74" y2="278.87"
+                            gradientTransform="translate(0 52)" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#fff"></stop>
+                            <stop offset="1" stop-color="#f1e5fc"></stop>
+                        </linearGradient>
+                        <filter id="c" width="197" height="249" x="161.9" y="135.46" color-interpolation-filters="sRGB"
+                            filterUnits="userSpaceOnUse">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                            <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                            </feColorMatrix>
+                            <feOffset dy="4"></feOffset>
+                            <feGaussianBlur stdDeviation="8"></feGaussianBlur>
+                            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix>
+                            <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
+                            <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
+                        </filter>
+                    </defs>
+                    <path fill="url(#a)"
+                        d="M14.985 27.712c-.237-6.815 5.072-13.099 12.249-13.099h73.54c7.177 0 12.486 6.284 12.249 13.099-.228 6.546.068 15.026 2.202 21.94 2.141 6.936 5.751 11.319 11.664 11.883v6.387c-5.913.564-9.523 4.947-11.664 11.883-2.134 6.914-2.43 15.394-2.202 21.94.237 6.815-5.072 13.098-12.249 13.098h-73.54c-7.177 0-12.486-6.284-12.249-13.098.228-6.546-.068-15.026-2.203-21.94-2.14-6.935-5.76-11.319-11.673-11.883v-6.387c5.913-.563 9.533-4.947 11.673-11.883 2.135-6.914 2.43-15.394 2.203-21.94z">
+                    </path>
+                    <path fill="url(#b)"
+                        d="M267.1 364.46c47.297 0 75.798-23.158 75.798-61.355 0-28.873-20.336-49.776-50.532-53.085v-1.203c22.185-3.609 39.594-24.211 39.594-47.219 0-32.783-25.882-54.138-65.322-54.138h-88.74v217zm-54.692-189.48h45.911c24.958 0 39.131 11.128 39.131 31.279 0 21.505-16.484 33.535-46.372 33.535h-38.67zm0 161.96v-71.431h45.602c32.661 0 49.608 12.03 49.608 35.49 0 23.459-16.484 35.941-47.605 35.941z"
+                        filter="url(#c)" transform="translate(1.494 2.203) scale(.24566)"></path>
+                </svg>
+
+
+
+                <svg viewBox="0 0 128 128" height="auto" width="auto" class="images">
+                    <path fill="#F0DB4F"
+                        d="M2 1v125h125V1H2zm66.119 106.513c-1.845 3.749-5.367 6.212-9.448 7.401-6.271 1.44-12.269.619-16.731-2.059-2.986-1.832-5.318-4.652-6.901-7.901l9.52-5.83c.083.035.333.487.667 1.071 1.214 2.034 2.261 3.474 4.319 4.485 2.022.69 6.461 1.131 8.175-2.427 1.047-1.81.714-7.628.714-14.065C58.433 78.073 58.48 68 58.48 58h11.709c0 11 .06 21.418 0 32.152.025 6.58.596 12.446-2.07 17.361zm48.574-3.308c-4.07 13.922-26.762 14.374-35.83 5.176-1.916-2.165-3.117-3.296-4.26-5.795 4.819-2.772 4.819-2.772 9.508-5.485 2.547 3.915 4.902 6.068 9.139 6.949 5.748.702 11.531-1.273 10.234-7.378-1.333-4.986-11.77-6.199-18.873-11.531-7.211-4.843-8.901-16.611-2.975-23.335 1.975-2.487 5.343-4.343 8.877-5.235l3.688-.477c7.081-.143 11.507 1.727 14.756 5.355.904.916 1.642 1.904 3.022 4.045-3.772 2.404-3.76 2.381-9.163 5.879-1.154-2.486-3.069-4.046-5.093-4.724-3.142-.952-7.104.083-7.926 3.403-.285 1.023-.226 1.975.227 3.665 1.273 2.903 5.545 4.165 9.377 5.926 11.031 4.474 14.756 9.271 15.672 14.981.882 4.916-.213 8.105-.38 8.581z">
+                    </path>
+                </svg>
+
+
+                <svg viewBox="0 0 128 128" height="auto" width="auto" class="images">
+                    <path fill="#1572B6"
+                        d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"></path>
+                    <path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z"></path>
+                    <path fill="#fff"
+                        d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z">
+                    </path>
+                    <path fill="#EBEBEB"
+                        d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018v-14.39z">
+                    </path>
+                    <path fill="#fff"
+                        d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881H81.127z">
+                    </path>
+                    <path fill="#EBEBEB"
+                        d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711h34.646zm-.047 27.996v13.831H48.792l-.277-3.108-.631-7.012-.33-3.711h16.447z">
+                    </path>
+                </svg>
+
+
+                <svg viewBox="0 0 128 128" height="auto" width="auto" class="images">
+                    <path fill="#EE4323"
+                        d="M16.399 120.213c-2.156 0-2.783-1.255-2.783-3.136 0-.627.079-1.334.176-2.079.472-3.253 1.625-5.114 4.408-5.114 1.882 0 2.8.842 2.8 2.371V113h1.867c.021 0 .021-.686.021-.842 0-2.234-1.353-4.353-4.685-4.353-4.528 0-6.39 2.46-7.076 7.282a12.392 12.392 0 00-.157 1.896c0 2.842 1.118 5.427 5.116 5.427 3.038 0 4.842-1.481 5.9-3.304l-1.784-1.201c-1.156 1.823-2.411 2.308-3.803 2.308zm12.251-8.977c-3.627 0-5.194 1.861-5.723 5.565-.06.433-.099.883-.099 1.294 0 2.391 1.117 4.293 4.213 4.293 3.627 0 5.215-1.941 5.744-5.587.059-.47.098-.901.098-1.332.001-2.43-1.155-4.233-4.233-4.233zm1.509 5.566c-.392 2.686-1.234 3.509-2.823 3.509-1.273 0-1.9-.529-1.9-2.117 0-.392.04-.862.118-1.392.392-2.665 1.176-3.488 2.783-3.488 1.294 0 1.94.529 1.94 2.136 0 .392-.04.843-.118 1.352zM42 108l-.607 3.598c-.039.313-.019.209.099.503-.568-.431-1.588-.716-2.274-.716-3.254 0-5.076 1.473-5.664 5.589-.078.49-.098.903-.098 1.314 0 3 1.764 4.118 4.135 4.118 1.001 0 1.98.021 2.744-.625L40.53 123h1.882l2.195-15H42zm-1.862 11.742a4.496 4.496 0 01-2.272.647c-1.431 0-1.823-.745-1.823-1.94 0-.451.059-.979.138-1.549.45-3.116 1.45-3.666 2.744-3.666.842 0 1.488.138 2.097.472l-.884 6.036zm10.193-8.506c-3.588 0-5.272 1.704-5.841 5.565-.06.471-.099.922-.099 1.353 0 2.646 1.353 4.234 4.331 4.234 2.313 0 4.039-.961 4.96-2.725l-1.98-.804c-.568.862-1.332 1.45-2.685 1.45-1.45 0-2.038-.39-2.038-1.684 0-.255.02-.626.059-.626h7.075c.099-1 .215-1.707.215-2.293 0-1.959-.744-4.47-3.997-4.47zM51.683 116h-4.312c.432-1 1.156-2.548 2.646-2.548 1.156 0 1.725.676 1.725 1.832-.001.196-.019.716-.059.716zm10.188-5l.235-2h-5.528l-.234 2h1.45l-1.567 10h-1.452l-.234 2h5.527l.236-2h-1.451l1.567-10zm11.232 3l.706-2h-1.901l-1.371.283c-.765-.489-1.804-.856-2.783-.856-2.804 0-5.194 1.354-5.194 4.432 0 .863.313 1.56.685 2.031-.587.313-1.097.837-1.097 1.544 0 .313.117.634.353.927-1.177.707-1.9 1.878-1.9 3.249 0 2.647 2.763 3.212 4.88 3.212 2.665 0 5.841-.609 5.841-4 0-1.156-.725-2.059-2.822-2.451l-3.783-.707c-.431-.079-.529-.216-.529-.412 0-.294.178-.45.471-.45l.255.039c.51.117 1.098.177 1.705.177 2.725 0 5.155-1.177 5.155-4.234 0-.432-.078-.724-.274-1.195.333.157.765.412.94.412h.663zm-5.389 8.113c.744.138.998.412.998.902 0 1.588-1.705 1.784-2.939 1.784-1.882 0-2.587-.45-2.587-1.451 0-.882.254-1.293.843-1.921l3.685.686zm-.805-5.134c-1.137 0-1.764-.411-1.764-1.392 0-1.45.843-2.293 2.313-2.293 1.176 0 1.745.49 1.745 1.449 0 1.451-.824 2.236-2.294 2.236zm13.157-5.743c-1.098 0-2.077.539-3.293 1.498l-.176-.734H74.44l-1.509 11h2.607l1.137-8.342c.765-.47 1.705-1.153 2.509-1.153.979 0 1.333.473 1.333 1.374 0 .216-.021.855-.06 1.09L79.498 123h2.607l.959-7.088c.04-.332.079-.878.079-1.191.001-1.864-.882-3.485-3.077-3.485zm8.029 9.008l.02-.269L89.251 112h-4.332l-.273 2h1.9c-.157 0-.255.175-.274.333l-.784 5.311a9.195 9.195 0 00-.058 1.002c0 1.372.744 2.354 2.272 2.354h1.333l.294-2h-.842c-.295 0-.392-.521-.392-.756zM89.78 108h-2.548c-.157 0-.157-.577-.176-.381l-.354 2.818c-.02.177-.02.563.137.563h2.549c.157 0 .157-.685.176-.863l.354-2.175c.02-.196.02.038-.138.038zm5.316 12.311c-.646 0-.96-.275-.96-.862l.02-.04.823-5.409h2.979l.901-2h-3.606l.607-4.401-2.743.877-.491 3.524h-1.587l-.274 2h1.842c-.176 1-.353.351-.372.548l-.706 4.743c-.039.216-.039.373-.039.568 0 1.862 1.372 2.559 3.02 2.559 1.528 0 2.763-.446 3.724-1.251l-1.216-1.496c-.609.372-1.02.64-1.922.64zm9.565-9.075c-3.587 0-5.272 1.704-5.841 5.565-.059.471-.098.922-.098 1.353 0 2.646 1.352 4.234 4.331 4.234 2.313 0 4.039-.961 4.959-2.725l-1.979-.804c-.568.862-1.333 1.45-2.686 1.45-1.449 0-2.038-.39-2.038-1.684 0-.255.021-.626.06-.626h7.075c.098-1 .216-1.707.216-2.293 0-1.959-.745-4.47-3.999-4.47zm1.353 4.764h-4.312c.431-1 1.155-2.548 2.646-2.548 1.156 0 1.725.676 1.725 1.832-.001.196-.02.716-.059.716zm9.859-4.764c-.941 0-1.823.539-2.705 1.38l-.157-.616h-2.155l-1.51 11h2.627l1.156-8.518c.686-.411 1.47-.762 2.215-.762.471 0 .921-.075 1.352-.016l.335-2.273c-.394-.078-.786-.195-1.158-.195zM49.31 100.121c-5.933-2.564-11.485-9.082-11.498-15.751-.016-7.271 4.592-13.444 10.323-17.501-.689 2.603-1.065 4.984.642 7.312a6.913 6.913 0 006.99 2.646c6.132-1.342 6.413-8.083 2.778-12.01-3.594-3.889-7.071-8.282-5.703-13.922.685-2.827 2.421-5.475 4.62-7.368-1.69 4.442 3.113 8.823 6.278 11.005 5.49 3.786 11.513 6.647 16.561 11.085 5.31 4.664 9.231 10.971 8.439 18.285-.858 7.928-7.158 13.442-14.224 16.226 14.932-3.296 30.361-14.885 30.677-31.446.262-13.624-9.084-24.109-20.662-30.112l-.605-.33c.318.771.422 1.427.41 2.014a7.02 7.02 0 00.194-1.337 6.516 6.516 0 01-.212 1.616l.018-.279a6.788 6.788 0 01-.857 2.043l.17-.183c-2.31 3.831-8.563 4.663-11.652.696-4.966-6.381.104-13.261.813-20.018.888-8.469-4.423-16.69-11.008-21.61 3.627 5.867-1.151 13.629-4.974 17.968-3.707 4.207-8.215 7.719-12.307 11.541-4.396 4.105-8.622 8.429-12.235 13.247-7.226 9.643-11.65 21.771-8.399 33.802 3.249 12.022 13.663 19.675 25.423 22.381z">
+                    </path>
+                </svg>
+            </div>
+    </section>
+
+    <section id="experience">
+        <div class="experience bg-slate-200 px-4 md:px-8 lg:px-24 xl:px-48 py-5 lg:py-16">
+            <h3 class="text-4xl experiance_saction md:text-5xl lg:text-6xl xl:text-7xl font-bold pt-5">
+                Experience<span class="text-purple-700">.</span>
+            </h3>
+            <p
+                class="text-center mt-6 md:mt-8 lg:mt-10 tracking-wide experiance_p md:tracking-wider lg:tracking-widest leading-relaxed hidden lg:block">
+                As a fresher developer with intermediate experience in both web and Android technologies, I have
+                cultivated a comprehensive skill set that
+                enables me to contribute effectively to diverse development projects. In web development, I am
+                proficient in core technologies such as HTML, CSS, and JavaScript, which I have utilized to create
+                dynamic and responsive websites. My experience extends to working with popular front-end frameworks like
+                React, where I have built modular and maintainable user interfaces, leveraging state management
+                techniques and React hooks to enhance the user experience. I have also gained hands-on experience in
+                implementing responsive design principles, ensuring that applications are accessible and functional
+                across various devices and screen sizes. Additionally, I am familiar with back-end development using
+                Node.js and Express, allowing me to create RESTful APIs and handle server-side logic, which has further
+                solidified my understanding of full-stack development.
+
+                On the Android development front, I have developed a strong command over Java and Kotlin, the primary
+                languages for Android application development. My projects have involved designing and developing
+                user-friendly mobile applications with a focus on performance optimization and efficient resource
+                management. I am skilled in using Android Studio and have a deep understanding of the Android SDK, which
+                has enabled me to implement complex features such as real-time data synchronization, in-app navigation,
+                and background services. My experience also includes working with databases like SQLite and Room, where
+                I have managed data persistence and optimized queries for faster data retrieval. Moreover, I have
+                integrated third-party libraries and APIs, such as Firebase for real-time data handling and Google Play
+                Services for location-based functionalities, to enhance the capabilities of my applications.
+
+                <!-- Beyond technical skills, I am well-versed in version control systems like Git, which has equipped me
+                with the ability to manage code repositories effectively, collaborate with team members, and maintain a
+                clean development history. I am also familiar with agile development practices and have experience
+                working in collaborative environments where communication and teamwork are essential to project success.
+                My passion for technology drives me to stay updated with the latest advancements in both web and mobile
+                development, continuously learning new tools and methodologies to improve my craft. -->
+
+                I am eager to bring my skills, enthusiasm, and a strong work ethic to a professional setting where I can
+                contribute to innovative projects while further developing my expertise. My goal is to grow as a
+                versatile developer who can deliver high-quality solutions across both web and mobile platforms,
+                ultimately helping organizations achieve their business objectives through cutting-edge technology.
+            </p>
+
+            <p
+                class="block lg:hidden mt-6 md:mt-8 lg:mt-10 tracking-wide md:tracking-wider experiance_p lg:tracking-widest leading-relaxed">
+                As a new developer, I am excited about web and Android development. I am proficient in HTML, CSS, and
+                JavaScript for building dynamic websites. I've worked with React for creating user-friendly interfaces
+                and am familiar with Node.js for server-side programming. For Android, I know Java and Kotlin and can
+                build efficient, user-centric mobile applications. I am also skilled in using version control systems
+                like Git and am eager to contribute to meaningful projects while learning and growing in the field.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer class="bg-black text-white py-6 px-4 md:px-8 lg:px-16 text-xs">
+        <div class="container mx-auto flex md:flex-row justify-between items-start md:items-center">
+            <!-- Left Container -->
+            <div class="mb-6 md:mb-0">
+                <h4 class="text-xl font-bold mb-2">Let's Connect:</h4>
+                <ul class="space-y-1">
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/vishal-suthar-vs18"
+                            class="hover:underline">vishal-suthar-vs18</a></li>
+                    <li>GitHub: <a href="https://github.com/Vis-star-sys" class="hover:underline">Vis-star-sys</a></li>
+                    <li>Email: <a href="mailto:vishal12suthar@gmail.com"
+                            class="hover:underline">vishal12suthar@gmail.com</a></li>
+                    <li>Instagram: vs_suthar18</li>
+                </ul>
+            </div>
+
+            <!-- Right Container -->
+            <div class="mb-6 md:mb-0">
+                <ul
+                    class="space-y-1 md:space-y-2 flex flex-col justify-center items-center lg:justify-start lg:items-start lg:flex-col gap-4">
+                    <li><a href="#Home" class="hover:underline">Home</a></li>
+                    <li><a href="#About" class="hover:underline">About</a></li>
+                    <li><a href="#experience" class="hover:underline">Experience</a></li>
+                    <li><a href="#Skills" class="hover:underline">Skills</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Main Content -->
+        <div class="bg-black border-t border-gray-700 mt-6 pt-4 text-center">
+            <h4 class="text-lg font-semibold mb-2">Technology Stack:</h4>
+            <span class="block mb-2">HTML | CSS | JavaScript | React | Node.js | Git</span>
+            <span class="block mb-2">Design & Developed by Vishal Suthar</span>
+            <span>&#169;2024 Vishal Suthar. All rights reserved</span>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="module" src="./script.js"></script>
+</body>
+
+</html>
